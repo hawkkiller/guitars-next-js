@@ -5,8 +5,8 @@ import Link from "next/link"
 import {NavItem} from "@/types/nav"
 import {cn} from "@/lib/utils"
 import {Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger} from "@/components/ui/sheet";
-import {HamburgerMenuIcon} from "@radix-ui/react-icons";
-import {Button, buttonVariants} from "@/components/ui/button";
+import {Menu} from "lucide-react"
+import {buttonVariants} from "@/components/ui/button";
 
 interface MainNavProps {
   items?: NavItem[]
@@ -44,7 +44,7 @@ export function MainNavSmall({items}: MainNavProps) {
     <Sheet>
       <SheetTrigger>
         <div className={buttonVariants({variant: "outline"})}>
-          <HamburgerMenuIcon></HamburgerMenuIcon>
+          <Menu></Menu>
         </div>
       </SheetTrigger>
       <SheetContent>
